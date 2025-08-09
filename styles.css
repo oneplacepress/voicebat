@@ -805,7 +805,7 @@ body {
 
 /* Footer */
 .footer {
-    background: transparent;
+    background: rgba(44, 62, 80, 0.95);
     backdrop-filter: blur(10px);
     color: white;
     padding: 60px 0 30px;
@@ -877,7 +877,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 20px;
