@@ -9,7 +9,7 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: white;
     background: #ffffff;
     overflow-x: hidden;
 }
@@ -25,10 +25,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: transparent;
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -48,7 +47,8 @@ body {
     gap: 12px;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .logo {
@@ -65,15 +65,17 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: white;
+    font-weight: 700;
     transition: all 0.3s ease;
     position: relative;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .nav-menu a:hover {
-    color: #6c63ff;
+    color: #00ff41;
     transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6), 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .nav-menu a::after {
@@ -109,11 +111,15 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 20px 50px;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-bg-image {
@@ -122,7 +128,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero-bg-image::before {
@@ -132,7 +138,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 2;
 }
 
@@ -151,7 +157,7 @@ body {
     width: 100%;
     padding: 0 40px;
     position: relative;
-    z-index: 3;
+    z-index: 10;
 }
 
 .hero-text h1 {
@@ -208,7 +214,7 @@ body {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 15;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
@@ -256,7 +262,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -266,7 +272,7 @@ body {
 }
 
 .alt-bg::before {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .section-header {
@@ -589,20 +595,78 @@ body {
     object-fit: contain;
 }
 
+/* Ensure all contact content is white */
+.contact-info h2, .contact-info p, .contact-info div, .contact-details p {
+    color: white !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Elegant Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, #2d3436, #636e72);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #636e72, #2d3436);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.9);
+    color: #2d3436;
+    padding: 15px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Contact Form */
 .contact-form-container {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+}
+
+.contact-form-header {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: white !important;
+    margin-bottom: 30px !important;
+    text-align: center !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #2c3e50;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .competitive-advantage {
@@ -631,19 +695,27 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 15px;
-    border: 2px solid #e9ecef;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     font-size: 1rem;
     transition: all 0.3s ease;
     font-family: inherit;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #6c63ff;
-    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+    border-color: #00ff41;
+    box-shadow: 0 0 0 3px rgba(0, 255, 65, 0.2);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .submit-btn {
@@ -696,8 +768,10 @@ body {
 .footer-nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: nowrap;
+    min-width: 0;
+    flex-shrink: 1;
 }
 
 .footer-nav a {
@@ -718,6 +792,14 @@ body {
 
 .footer-contact p {
     margin-bottom: 5px;
+}
+
+.footer-tagline {
+    font-style: italic;
+    color: #00ff41 !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6) !important;
 }
 
 .footer-bottom {

@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            navbar.style.background = 'rgba(0, 0, 0, 0.8)';
+            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
         } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+            navbar.style.background = 'transparent';
+            navbar.style.boxShadow = 'none';
         }
         
         // Hide/show navbar on scroll
