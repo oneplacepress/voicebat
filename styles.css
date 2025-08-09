@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 120px;
 }
 
 .container {
@@ -295,7 +295,7 @@ body {
 /* All sections need proper bottom spacing for footer */
 .section {
     min-height: 100vh;
-    padding: 80px 0 60px;
+    padding: 80px 0 120px;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -306,9 +306,9 @@ body {
     margin-bottom: 0;
 }
 
-/* Last section needs minimal bottom padding for footer */
+/* Last section needs extra bottom padding for footer */
 .section:last-of-type {
-    padding-bottom: 80px;
+    padding-bottom: 140px;
 }
 
 
@@ -818,15 +818,20 @@ body {
 
 /* Footer */
 .footer {
-    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('public/images/radio/20.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     backdrop-filter: blur(15px);
     color: white;
     padding: 60px 0 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     z-index: 10;
-    margin-top: 40px;
+    margin-top: 0;
 }
 
 .footer-content {
@@ -1080,7 +1085,7 @@ body {
     
     .section {
         min-height: 100vh;
-        padding: 80px 0 60px;
+        padding: 80px 0 100px;
     }
     
     .section-header h2 {
@@ -1107,7 +1112,7 @@ body {
     
     .footer {
         padding: 40px 0 20px;
-        margin-top: 40px;
+        margin-top: 0;
     }
     
     .footer-content {
