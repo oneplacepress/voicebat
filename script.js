@@ -71,29 +71,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Navbar background change on scroll
+    // Keep navbar transparent at all times
     const navbar = document.querySelector('.navbar');
-    let lastScrollTop = 0;
     
-    window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollTop > 50) {
-            navbar.style.background = 'rgba(0, 0, 0, 0.8)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
-        } else {
-            navbar.style.background = 'transparent';
-            navbar.style.boxShadow = 'none';
-        }
-        
-        // Hide/show navbar on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 200) {
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
-        lastScrollTop = scrollTop;
-    });
+    // Ensure navbar stays transparent
+    navbar.style.background = 'transparent';
+    navbar.style.boxShadow = 'none';
     
     // Intersection Observer for animations
     const observerOptions = {

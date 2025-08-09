@@ -139,7 +139,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(240, 240, 240, 0.1));
+    background: rgba(0, 0, 0, 0.4);
     z-index: 5;
 }
 
@@ -302,7 +302,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(240, 240, 240, 0.08));
+    background: rgba(0, 0, 0, 0.35);
     z-index: 5;
 }
 
@@ -312,7 +312,7 @@ body {
 }
 
 .alt-bg::before {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(235, 235, 235, 0.12));
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .section-header {
@@ -632,6 +632,35 @@ body {
 .contact-info h2, .contact-info p, .contact-info div, .contact-details p {
     color: white !important;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #2d3436, #636e72);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-to-top:hover {
+    background: linear-gradient(135deg, #636e72, #2d3436);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Elegant Button Styles */

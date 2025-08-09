@@ -13,8 +13,10 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="public/voicebat_logo.png" alt="VoiceBat Logo" class="logo">
-                <span class="logo-text">VoiceBat</span>
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;">
+                    <img src="public/voicebat_logo.png" alt="VoiceBat Logo" class="logo">
+                    <span class="logo-text">VoiceBat</span>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
@@ -35,8 +37,11 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-dual-bg">
+            <div class="bg-underlayer" style="background-image: url('public/images/new/10.jpg');"></div>
+            <div class="bg-overlay" style="background-image: url('public/images/radio/10.jpg');"></div>
+        </div>
         <div class="hero-bg-image">
-            <img src="public/images/aerials/london3.jpg" alt="London Aerial View" class="bg-image">
             <div class="radio-overlay" data-link="solution.html">
                 <img src="public/radio.png" alt="Radio" class="radio-icon">
             </div>
@@ -57,7 +62,11 @@
     </section>
 
     <!-- Detailed Problem Analysis -->
-    <section class="section" style="background-image: url('public/images/aerials/manhattan2.jpg');">
+    <section class="section">
+        <div class="section-dual-bg">
+            <div class="bg-underlayer" style="background-image: url('public/images/new/11.jpg');"></div>
+            <div class="bg-overlay" style="background-image: url('public/images/radio/11.jpg');"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <img src="public/voicebat_logo.png" alt="VoiceBat" class="section-logo">
@@ -117,7 +126,11 @@
     </section>
 
     <!-- Impact Statistics -->
-    <section class="section alt-bg" style="background-image: url('public/images/aerials/toronto.jpg');">
+    <section class="section alt-bg">
+        <div class="section-dual-bg">
+            <div class="bg-underlayer" style="background-image: url('public/images/new/12.jpg');"></div>
+            <div class="bg-overlay" style="background-image: url('public/images/radio/12.jpg');"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <h2>The Impact</h2>
@@ -159,7 +172,11 @@
     </section>
 
     <!-- Real World Scenarios -->
-    <section class="section" style="background-image: url('public/images/aerials/coast.jpg');">
+    <section class="section">
+        <div class="section-dual-bg">
+            <div class="bg-underlayer" style="background-image: url('public/images/new/13.jpg');"></div>
+            <div class="bg-overlay" style="background-image: url('public/images/radio/13.jpg');"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <img src="public/voicebat_logo.png" alt="VoiceBat" class="section-logo">
@@ -201,15 +218,16 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="section alt-bg" style="background-image: url('public/images/aerials/new_zealand.jpg');">
+    <section class="section alt-bg">
+        <div class="section-dual-bg">
+            <div class="bg-underlayer" style="background-image: url('public/images/new/14.jpg');"></div>
+            <div class="bg-overlay" style="background-image: url('public/images/radio/14.jpg');"></div>
+        </div>
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="card-bg-image">
-                        <img src="public/images/aerials/new_zealand.jpg" alt="New Zealand" class="bg-image">
-                        <div class="radio-overlay" data-link="solution.html">
-                            <img src="public/radio.png" alt="Radio" class="radio-icon">
-                        </div>
+                    <div class="radio-overlay" data-link="solution.html">
+                        <img src="public/radio.png" alt="Radio" class="radio-icon">
                     </div>
                     <h2>Ready for a Solution?</h2>
                     <p>VoiceBat transforms communication by adding voice & personality to messaging while eliminating coverage dependence.</p>
@@ -230,8 +248,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="public/voicebat_logo.png" alt="VoiceBat" class="footer-logo-img">
-                    <span>VoiceBat</span>
+                    <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;">
+                        <img src="public/voicebat_logo.png" alt="VoiceBat" class="footer-logo-img">
+                        <span>VoiceBat</span>
+                    </a>
                 </div>
                 <div class="footer-nav">
                     <a href="index.html">Home</a>
@@ -256,6 +276,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
 
     <script src="script.js"></script>
 </body>
