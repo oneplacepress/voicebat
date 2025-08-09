@@ -295,7 +295,7 @@ body {
 /* All sections need proper bottom spacing for footer */
 .section {
     min-height: 100vh;
-    padding: 80px 0 120px;
+    padding: 80px 0 80px;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -943,7 +943,7 @@ body {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        padding: 30px 0;
+        padding: 15px 0;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
@@ -956,8 +956,8 @@ body {
         color: white !important;
         font-weight: 600 !important;
         font-size: 1.2rem !important;
-        padding: 15px 20px !important;
-        margin: 5px 0 !important;
+        padding: 10px 20px !important;
+        margin: 1px 0 !important;
         border-radius: 10px !important;
         display: block !important;
         transition: all 0.3s ease !important;
@@ -1070,7 +1070,7 @@ body {
     }
     
     .hero-presentation {
-        padding: 15px;
+        margin-top: 30px;
     }
     
     .hero-presentation iframe {
@@ -1080,12 +1080,10 @@ body {
     
     .pitch-deck-title {
         font-size: 1.5rem;
-        margin-bottom: 20px;
     }
     
     .section {
-        min-height: 100vh;
-        padding: 80px 0 100px;
+        padding: 60px 0 80px;
     }
     
     .section-header h2 {
@@ -1093,25 +1091,23 @@ body {
     }
     
     .content-card, .problem-card, .why-card, .edge-card,
-    .solution-main, .product-card, .stat-card {
+    .product-card, .stat-card {
         padding: 20px;
-        margin: 0 5px;
+        margin-bottom: 20px;
     }
     
     .radio-overlay {
-        width: 35px;
-        height: 35px;
-        top: 10px;
-        right: 10px;
+        width: 60px;
+        height: 60px;
     }
     
     .radio-icon {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
     
     .footer {
-        padding: 40px 0 20px;
+        padding: 30px 0 15px;
         margin-top: 0;
     }
     
@@ -1121,13 +1117,13 @@ body {
     
     .footer-nav a {
         font-size: 0.8rem;
-        padding: 8px 12px;
-        margin: 2px;
+        padding: 6px 10px;
+        margin: 1px;
     }
     
     .footer-bottom {
-        margin: 15px 5px 5px 5px;
-        padding: 10px;
+        margin: 10px 5px 5px 5px;
+        padding: 8px;
     }
     
     .hamburger {
