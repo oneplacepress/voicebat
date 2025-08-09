@@ -115,11 +115,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 20px 50px;
+    padding: 100px 20px 0px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-bottom: 0;
 }
 
 .hero-bg-image {
@@ -138,8 +139,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(240, 240, 240, 0.1));
+    z-index: 5;
 }
 
 .hero-bg-image .bg-image {
@@ -206,6 +207,43 @@ body {
     min-height: 600px;
 }
 
+/* Dual Background System */
+.hero-dual-bg, .section-dual-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-underlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+    filter: invert(0.1) contrast(1.2);
+    z-index: 2;
+}
+
 /* Radio Overlay */
 .radio-overlay {
     position: absolute;
@@ -253,6 +291,8 @@ body {
     background-attachment: fixed;
     display: flex;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .section::before {
@@ -262,17 +302,17 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(240, 240, 240, 0.08));
+    z-index: 5;
 }
 
 .section .container {
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .alt-bg::before {
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(235, 235, 235, 0.12));
 }
 
 .section-header {
@@ -547,14 +587,7 @@ body {
 }
 
 .contact-info .card-bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border-radius: 20px;
-    z-index: 1;
+    display: none;
 }
 
 .contact-info .card-bg-image .bg-image {
