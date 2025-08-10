@@ -246,10 +246,11 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    opacity: 0.4;
+    mix-blend-mode: overlay;
+    filter: contrast(1.2);
     z-index: 2;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('your-overlay-image.jpg');
 }
-
 
 /* Radio Overlay */
 .radio-overlay {
