@@ -975,22 +975,33 @@ body {
         padding: 120px 20px 0px;
     }
     
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* adds space between Market Opportunity and Market Analysis */
+    align-items: flex-start;
+}
+
+.hero-text, .hero-presentation {
+    flex: 1 1 300px; /* makes them responsive */
+}
+
+/* On smaller screens, stack them with extra vertical spacing */
+@media (max-width: 768px) {
     .hero-content {
-        padding: 0 40px;
+        flex-direction: column;
+        gap: 30px; /* vertical space */
     }
+}    
+
+
     
-    .hero-presentation iframe {
-        height: 600px;
-        min-height: 400px;
-    }
     
     .pitch-deck-title {
         font-size: 2rem;
     }
     
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
     
     .solution-content {
         grid-template-columns: 1fr;
@@ -1063,6 +1074,13 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 1024px) {
+    .hero {
+        padding-top: 150px; /* adjust until title clears the navbar */
+    }
+}
+
 
 @media (max-width: 480px) {
     .container {
