@@ -971,6 +971,11 @@ body {
         text-shadow: 0 0 10px rgba(0, 255, 65, 0.8) !important;
     }
     
+    /* Fix navbar overlap on tablet */
+    .hero {
+        padding: 120px 20px 0px;
+    }
+    
     .hero-content {
         padding: 0 20px;
     }
