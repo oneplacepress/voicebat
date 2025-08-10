@@ -497,6 +497,7 @@ body {
 }
 
 .product-card.featured h3, .product-card.featured p {
+    background: linear-gradient(135deg, #6c63ff 0%, #4ecdc4 50%);
     color: white;
 }
 
